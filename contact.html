@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Management — Margot Elise Robbie · By Appointment Only</title>
+<meta name="description" content="All meet and greet enquiries are handled exclusively by management at hollywoodmeetgreet@gmail.com.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+
+<header class="nav" id="nav">
+  <a class="brand" href="index.html" aria-label="Margot Elise Robbie — home">
+    <span class="brand__mark"><span>MR</span></span>
+    <span class="brand__text">Margot Elise Robbie</span>
+  </a>
+  <nav class="nav__links" id="navLinks" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="biography.html">Biography</a>
+    <a href="experience.html">Experience</a>
+    <a href="menu.html">The Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="nav__cta">Contact Management</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main class="wrap pad" id="contact">
+
+  <div class="head stagger">
+    <p class="eyebrow">Contact Management</p>
+    <h1 class="sec-title">All enquiries go <em>here</em>.</h1>
+    <p class="sec-lede">
+      Please write to management directly. Enquiries are reviewed personally and
+      answered in the order they are received.
+    </p>
+  </div>
+
+  <div class="email-block stagger">
+    <p class="email-block__label">Management · Direct Line</p>
+    <a class="email" href="mailto:hollywoodmeetgreet@gmail.com">hollywoodmeetgreet@gmail.com</a>
+    <button class="copy-btn" id="copyBtn" type="button" data-email="hollywoodmeetgreet@gmail.com">Copy email address</button>
+  </div>
+
+  <form class="form stagger" id="enquiryForm" novalidate>
+    <div class="field">
+      <label for="f-name">Full name</label>
+      <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+    </div>
+    <div class="field">
+      <label for="f-org">Organisation <span style="opacity:.5">(optional)</span></label>
+      <input id="f-org" name="organisation" type="text" placeholder="Company or agency">
+    </div>
+    <div class="field">
+      <label for="f-email">Your email</label>
+      <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+    </div>
+    <div class="field">
+      <label for="f-date">Preferred date</label>
+      <input id="f-date" name="date" type="date">
+    </div>
+    <div class="field field--full">
+      <label for="f-type">Type of engagement</label>
+      <select id="f-type" name="type">
+        <option>The Quiet Audience</option>
+        <option>The Evening Reception</option>
+        <option>The Press Roundtable</option>
+        <option>The Studio Session</option>
+        <option>Red Carpet Access</option>
+        <option>Private Screening &amp; Q&amp;A</option>
+        <option>The Chef's Table</option>
+        <option>The Long Lunch</option>
+        <option>The Producer's Masterclass</option>
+        <option>One-to-One Mentorship</option>
+        <option>Other / not sure yet</option>
+      </select>
+    </div>
+    <div class="field field--full">
+      <label for="f-msg">Your enquiry</label>
+      <textarea id="f-msg" name="message" placeholder="Please describe the occasion, the number of guests, and any relevant context." required></textarea>
+    </div>
+
+    <div class="form__actions">
+      <button class="btn btn--gold" type="submit">Send to Management</button>
+      <p class="form__note">
+        This form opens your email client and addresses the message to management.
+        Nothing is stored or transmitted by this website.
+      </p>
+    </div>
+    <p id="formStatus" role="status" aria-live="polite"></p>
+  </form>
+
+  <div class="assurance stagger">
+    <strong>Please note</strong>
+    No payment details, card information or financial data are requested or collected
+    anywhere on this website. All fees, contracts, deposits and payment arrangements
+    are discussed and concluded directly and exclusively with management at
+    <a href="mailto:hollywoodmeetgreet@gmail.com">hollywoodmeetgreet@gmail.com</a>.
+    Any communication claiming otherwise should be disregarded.
+  </div>
+
+  <footer class="foot">
+    <span>© <span id="year">2025</span> Margot Elise Robbie — Private Client Services</span>
+    <span>By appointment only</span>
+    <span>Enquiries handled exclusively by management</span>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
